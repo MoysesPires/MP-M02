@@ -1,7 +1,5 @@
-// Dados cadastrados (exemplo)
 const animais = [];
 
-// Função para cadastrar um novo animal
 function cadastrarAnimal(event) {
     event.preventDefault();
     const nome = document.getElementById('nome').value;
@@ -10,7 +8,6 @@ function cadastrarAnimal(event) {
     atualizarTabela();
 }
 
-// Função para atualizar a tabela com os dados cadastrados
 function atualizarTabela() {
     const tbody = document.querySelector('#animalTable tbody');
     tbody.innerHTML = '';
@@ -28,7 +25,6 @@ function atualizarTabela() {
     });
 }
 
-// Função para editar um animal
 function editarAnimal(index) {
     const novoNome = prompt('Digite o novo nome do animal:');
     const novaEspecie = prompt('Digite a nova espécie do animal:');
@@ -39,7 +35,6 @@ function editarAnimal(index) {
     }
 }
 
-// Função para excluir um animal
 function excluirAnimal(index) {
     animais.splice(index, 1);
     atualizarTabela();
