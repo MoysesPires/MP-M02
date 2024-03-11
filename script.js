@@ -1,5 +1,5 @@
 // Dados cadastrados (exemplo)
-const animais = []; // Suponha que você já tenha preenchido alguns animais
+const animais = [];
 
 // Função para cadastrar um novo animal
 function cadastrarAnimal(event) {
